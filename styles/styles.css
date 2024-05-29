@@ -1,0 +1,289 @@
+/* STYLES */
+
+.cabecera
+{
+    width: 100%;
+    height: 99.5vh;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.cabecera img
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.cabecera div
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: linear-gradient(to right, var(--c-tomato), var(--c-black), var(--c-sky));
+    opacity: 0.2;
+}
+
+.cabecera section
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.cabecera section h3
+{
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--c-white);    
+}
+
+.cabecera section h1
+{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 100px;    
+    color: var(--c-white);
+}
+
+.cabecera section h1 span:nth-child(1)
+{
+    font-weight: bold;
+    color: var(--c-tomato);
+}
+
+.cabecera section h1 span:nth-child(2)
+{  
+    font-weight: bold;
+    color: var(--c-sky);
+}
+
+.cabecera section a
+{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: var(--c-sky);
+    color: var(--c-white);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: .5s all ease;
+}
+
+.cabecera section a:hover
+{
+    background: var(--c-tomato);
+}
+
+/* Vuelos Section */
+.vuelos
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vuelos h1
+{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.vuelos div
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.vuelos div .card
+{
+    width: 30%;
+    box-shadow: 4px 4px 8px var(--c-black-trans);
+    border-radius: 5px;
+    transition: .5s all ease;
+}
+
+.vuelos div .card:nth-child(n):hover
+{
+    transform: scale(0.9);
+    box-shadow: 8px 8px 8px var(--c-tomato-trans);
+}
+
+.vuelos div .card:nth-child(2n):hover
+{
+    transform: scale(0.9);
+    box-shadow: 8px 8px 8px var(--c-sky-trans);
+}
+
+.vuelos div .card img
+{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.vuelos div .card .info
+{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Registro */
+.registracion
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: var(--c-tomato);
+    overflow: hidden;
+}
+
+.registracion .image 
+{
+    content: "";
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c-sky);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewX(50deg);
+    overflow: hidden;
+}
+
+.registracion .image section
+{
+    content: "";
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c-sky);
+    opacity: .5;
+}
+
+.registracion .image img
+{
+    content: "";
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c-sky);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewX(-50deg)
+}
+
+.registracion h1
+{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--c-white);
+    position: relative;
+    z-index: 5;
+}
+
+.registracion form
+{
+    width: 90%;
+    background-color: var(--c-white);
+    border-radius: 5px;
+    padding: 20px 5px;
+    display: flex;
+    position: relative;
+    z-index: 5;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.registracion form div
+{
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registracion form div label, 
+.registracion form div input, 
+.registracion form div select,
+.registracion form div select option
+{
+    width: 100%;
+}
+
+.registracion form div label
+{
+    color: var(--c-gray);
+    font-size: 20px;
+}
+
+.registracion form div input, div select
+{
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--c-gray);
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: var(--c-white);
+}
+
+.registracion form div button
+{
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: var(--c-tomato);
+    color: var(--c-white);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: .5s all ease;
+    cursor: pointer;
+}
+
+.registracion form div button:hover
+{
+    background: var(--c-sky);
+}

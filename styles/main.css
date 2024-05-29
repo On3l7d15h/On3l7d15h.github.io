@@ -1,0 +1,30 @@
+/* ROOT CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal; 
+}
+
+:root 
+{
+    /* COLOR PALETTE */
+    --c-tomato: rgb(230, 73, 73);
+        --c-tomato-trans: rgba(230, 73, 73, .2);
+
+    --c-sky: rgb(59, 132, 222);
+        --c-sky-trans: rgba(59, 132, 222, .2);
+
+    /* NEUTRAL COLORS */
+    --c-white: rgb(255, 255, 255);
+
+    --c-gray: rgb(143, 143, 143);
+
+    --c-black: rgb(0, 0, 0);
+        --c-black-trans: rgba(0, 0, 0, .2)
+}
